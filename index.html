@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- Encabezado principal con mi nombre -->
+    <header>
+      <h1>Bienvenido a mi Portfolio</h1>
+    </header>
+
+    <!-- Sección de presentación personal -->
+    <section id="about">
+      <h2>Sobre mí</h2>
+      <p>
+        Hola, soy [Tu Nombre], un apasionado desarrollador en formación, con
+        conocimientos en JavaScript, TypeScript, y C#.
+      </p>
+      <img src="img/mi_foto.jpg" alt="Mi foto personal" class="perfil-img" />
+    </section>
+
+    <!-- Tabla de conocimientos y hobbies -->
+    <section id="skills">
+      <h2>Conocimientos y Hobbies</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Tecnologías Conocidas</th>
+            <th>Tecnologías por Aprender</th>
+            <th>Hobbies</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>JavaScript, TypeScript, C#</td>
+            <td>React, Node.js, Docker</td>
+            <td>Fútbol, Lectura, Videojuegos</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Formulario de contacto -->
+    <section id="contact">
+      <h2>Contacto</h2>
+      <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" />
+
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" />
+
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" />
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+      <p>&copy; 2024 Mi Portfolio - Todos los derechos reservados</p>
+    </footer>
+  </body>
+</html>
