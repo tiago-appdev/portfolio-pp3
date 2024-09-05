@@ -1,4 +1,4 @@
-# 🚀 Mi Portfolio Personal
+# 🚀 Mi Portafolio Personal
 
 Bienvenido a mi portafolio, un espacio donde comparto mi trayectoria como **desarrollador**. Podés encontrar una presentación detallada de mis habilidades técnicas, los proyectos en los que he trabajado, y mi deseo aprender nuevas tecnologías. Este sitio web ha sido diseñado con un enfoque sencillo y limpio, utilizando HTML y CSS para ofrecer una experiencia visual agradable.
 
