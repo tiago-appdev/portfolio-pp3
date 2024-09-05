@@ -1,97 +1,223 @@
-/* General */
-body {
-  font-family: 'Arial', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+
+/* Reinicia estilos generales para evitar inconsistencias entre navegadores */
+* {
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
-  color: #333;
+  box-sizing: border-box;
 }
 
-/* Encabezado */
-header {
-  background-color: #4caf50;
-  color: white;
+/* Paleta de colores y sombras definidos como variables para facilitar futuras modificaciones */
+:root {
+  --border: 16px;
+  --dark-color: #2f3e44;
+  --gradient: linear-gradient(135deg, #91b8c180 0%, #56828180 100%);
+  --light-color: #c7d8d9;
+  --neutral-color: #ded7c9;
+  --primary-color: #91b8c1;
+  --secondary-color: #568281;
+  --shadow: 6px 6px 10px rgba(0, 0, 0, 0.6);
+  --url-img: url(../img/bg.jpg);
+}
+
+/* Estilos generales para el cuerpo del documento */
+body {
+  background-color: var(--neutral-color);
+  color: var(--dark-color);
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilo para el encabezado principal */
+.header {
+  background-color: var(--light-color);
+  color: var(--dark-color);
+  padding: 5px 0;
   text-align: center;
-  padding: 1rem 0;
+}
+
+.name {
+  font-size: 2rem;
 }
 
 /* Sección de presentación personal */
+/* Mejora: Podría ajustarse la imagen de perfil para diferentes tamaños de pantalla */
 #about {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  min-height: calc(50vh - 10px);
   padding: 2rem;
   text-align: center;
-  background-color: #fff;
+  width: 100%;
+}
+
+.description {
+  width: 50%;
+  word-wrap: break-word;
+}
+
+.description-paragraph {
+  margin: 10px 0;
+  text-align: justify;
 }
 
 .perfil-img {
-  width: 150px;
-  height: 150px;
   border-radius: 50%;
-  margin-top: 1rem;
+  box-shadow: 6px 4px 20px rgba(0, 0, 0, 0.4);
+  height: 200px;
+  margin: 0.7rem;
+  object-fit: fill;
+  width: 200px;
+  /* Sería útil hacer que la imagen sea más responsiva */
 }
 
-/* Tabla de conocimientos */
+/* Estilos para la tabla de conocimientos */
 #skills {
-  padding: 2rem;
   background-color: #f9f9f9;
+  border-radius: var(--border);
+  box-shadow: var(--shadow);
+  margin: 50px auto;
+  max-width: 90%;
+  padding: 20px;
 }
 
-table {
-  width: 100%;
+.skills-title {
+  color: #333;
+  font-family: 'Arial', sans-serif;
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Mejora: Se podría agregar una clase para estilos en tablas más complejas */
+.skills-table {
   border-collapse: collapse;
-  margin: 1rem 0;
+  font-family: 'Arial', sans-serif;
+  width: 100%;
 }
 
-table,
-th,
-td {
+.skills-table th,
+.skills-table td {
   border: 1px solid #ddd;
+  padding: 15px;
+  text-align: center;
 }
 
-th,
-td {
-  padding: 1rem;
-  text-align: left;
-}
-
-/* Formulario de contacto */
-#contact {
-  padding: 2rem;
-  background-color: #fff;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-}
-
-label {
-  margin-bottom: 0.5rem;
+.skills-table th {
+  background-color: var(--primary-color);
+  color: white;
   font-weight: bold;
 }
 
-input {
-  margin-bottom: 1rem;
-  padding: 0.5rem;
-  font-size: 1rem;
+.skills-table tr:nth-child(even) {
+  background-color: #f2f2f2;
 }
 
+.skills-table tr:hover {
+  background-color: #ddd;
+}
+
+.skills-table td {
+  color: #333;
+}
+
+.skills-table td:first-child {
+  border-left: 0;
+}
+
+.skills-table td:last-child {
+  border-right: 0;
+}
+
+.skills-table th:first-child {
+  border-left: 0;
+}
+
+.skills-table th:last-child {
+  border-right: 0;
+}
+
+/* Estilo para el formulario de contacto */
+#contact {
+  background-image: var(--gradient), var(--url-img);
+  background-position: center;
+  background-size: cover;
+  height: 725px;
+  margin-top: 115px;
+  padding: 1rem;
+  width: 100%;
+}
+
+.contact-title {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+form {
+  background-color: #c7d8d97e;
+  border-radius: var(--border);
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  margin: 90px auto;
+  padding: 30px 20px 40px;
+  width: 400px;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+input {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  outline: var(--secondary-color);
+}
+
+/* Mejora: Validar campos del formulario antes de enviar */
 button {
-  padding: 0.7rem;
-  background-color: #4caf50;
-  color: white;
+  background-color: var(--dark-color);
   border: none;
+  border-radius: 2rem;
+  color: var(--light-color);
   cursor: pointer;
+  font-size: 1.2rem;
+  margin: auto;
+  padding: 0.5rem;
+  width: 60%;
 }
 
 button:hover {
-  background-color: #45a049;
+  background-color: var(--light-color);
+  color: var(--dark-color);
 }
 
 /* Pie de página */
 footer {
-  background-color: #333;
+  background-color: var(--dark-color);
   color: white;
-  text-align: center;
   padding: 1rem 0;
-  margin-top: 2rem;
+  text-align: center;
 }
+
+@media only screen and (max-width: 700px) {
+  #about {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .description {
+    width: 90%;
+  }
+
+  h2 {
+    margin-top: 20px;
+  }
+}
+
+/* Mejora general: Nos soy diseñador por lo que hay mucho que mejorar en el diseño y principalmente en la mezcla de colores */

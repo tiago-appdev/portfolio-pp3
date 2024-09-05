@@ -8,24 +8,32 @@
   </head>
   <body>
     <!-- Encabezado principal con mi nombre -->
-    <header>
-      <h1>Bienvenido a mi Portfolio</h1>
+    <header class="header">
+      <h1 class="name">Tiago Ibarrola</h1>
     </header>
 
-    <!-- Sección de presentación personal -->
+    <!-- Sección de presentación personal con una imagen y una descripción -->
     <section id="about">
-      <h2>Sobre mí</h2>
-      <p>
-        Hola, soy [Tu Nombre], un apasionado desarrollador en formación, con
-        conocimientos en JavaScript, TypeScript, y C#.
-      </p>
-      <img src="img/mi_foto.jpg" alt="Mi foto personal" class="perfil-img" />
+      <img src="img/passport.jpg" alt="Foto personal" class="perfil-img" />
+      <div class="description">
+        <h2>Sobre mí</h2>
+        <p class="description-paragraph">
+          Soy un desarrollador en formación, con conocimientos en JavaScript,
+          Kotlin, y C#. Me encanta aprender nuevas tecnologías y mejorar
+          continuamente mis habilidades de programación. Actualmente, estoy
+          explorando frameworks como React y Node.js, además de herramientas
+          como Docker y TypeScript. Siempre busco nuevos desafíos que me
+          permitan crecer tanto profesional como personalmente. Fuera del ámbito
+          tecnológico, disfruto leer y programar proyectos personales, lo que me
+          ayuda a mantenerme motivado y a expandir mi creatividad.
+        </p>
+      </div>
     </section>
 
-    <!-- Tabla de conocimientos y hobbies -->
+    <!-- Tabla que muestra mis conocimientos tecnológicos y hobbies -->
     <section id="skills">
-      <h2>Conocimientos y Hobbies</h2>
-      <table>
+      <h2 class="skills-title">Conocimientos y Hobbies</h2>
+      <table class="skills-table">
         <thead>
           <tr>
             <th>Tecnologías Conocidas</th>
@@ -35,35 +43,45 @@
         </thead>
         <tbody>
           <tr>
-            <td>JavaScript, TypeScript, C#</td>
-            <td>React, Node.js, Docker</td>
-            <td>Fútbol, Lectura, Videojuegos</td>
+            <td>JavaScript, Kotlin, C#</td>
+            <td>React, Node.js, Docker, Typescript</td>
+            <td>Leer, Programar</td>
           </tr>
         </tbody>
       </table>
     </section>
 
-    <!-- Formulario de contacto -->
+    <!-- Formulario para permitir que los visitantes me contacten -->
     <section id="contact">
-      <h2>Contacto</h2>
       <form>
+        <h2 class="contact-title">Contacto</h2>
         <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" />
+        <input type="text" id="nombre" name="nombre" placeholder="Juan" />
 
         <label for="apellido">Apellido:</label>
-        <input type="text" id="apellido" name="apellido" />
+        <input type="text" id="apellido" name="apellido" placeholder="Pérez" />
 
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="email@email.com"
+        />
 
         <label for="telefono">Teléfono:</label>
-        <input type="tel" id="telefono" name="telefono" />
+        <input
+          type="tel"
+          id="telefono"
+          name="telefono"
+          placeholder="011-123123"
+        />
 
         <button type="submit">Enviar</button>
       </form>
     </section>
 
-    <!-- Pie de página -->
+    <!-- Pie de página con derechos reservados -->
     <footer>
       <p>&copy; 2024 Mi Portfolio - Todos los derechos reservados</p>
     </footer>
