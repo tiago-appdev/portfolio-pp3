@@ -8,47 +8,192 @@
   </head>
   <body>
     <!-- Encabezado principal con mi nombre -->
-    <header class="header">
-      <h1 class="name">Tiago Ibarrola</h1>
-    </header>
+    <div class="nav-container">
+      <div class="header">
+        <p id="scrollToTop">
+          <span><</span>
+          TIAGO
+          <span>/></span>
+        </p>
+        <nav class="nav-desktop">
+          <a href="#services">Servicios</a>
+          <a href="#skills">Habilidades</a>
+          <a href="#about">Sobre mí</a>
+          <a href="#contact">Contacto</a>
+        </nav>
+        <!-- Agregar el ícono de menú (hamburger) para móviles -->
+        <div class="hamburger-menu" id="hamburgerMenu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <nav class="nav-mobile" id="navMobile">
+          <a href="#services">Servicios</a>
+          <a href="#skills">Habilidades</a>
+          <a href="#about">Sobre mí</a>
+          <a href="#contact">Contacto</a>
+        </nav>
+      </div>
+    </div>
 
     <!-- Sección de presentación personal con una imagen y una descripción -->
-    <section id="about">
-      <img src="img/passport.jpg" alt="Foto personal" class="perfil-img" />
-      <div class="description">
-        <h2>Sobre mí</h2>
-        <p class="description-paragraph">
-          Soy un desarrollador en formación, con conocimientos en JavaScript,
-          Kotlin, y C#. Me encanta aprender nuevas tecnologías y mejorar
-          continuamente mis habilidades de programación. Actualmente, estoy
-          explorando frameworks como React y Node.js, además de herramientas
-          como Docker y TypeScript. Siempre busco nuevos desafíos que me
-          permitan crecer tanto profesional como personalmente. Fuera del ámbito
-          tecnológico, disfruto leer y programar proyectos personales, lo que me
-          ayuda a mantenerme motivado y a expandir mi creatividad.
+    <section class="home" id="home">
+      <div class="home-description">
+        <h3 class="home-title">Hola, Soy Tiago</h3>
+        <div class="typewriter">
+          <span class="text" id="typewriter"></span>
+        </div>
+        <p class="home-paragraph">
+          Soy desarrollador Front-End / Full-Stack. Actualmente me estoy
+          especializando en tecnologias Fron-End, pero tengo conocimiento de
+          varios lenguajes.
+        </p>
+      </div>
+      <img
+        src="./img/home.svg"
+        alt="Imagen persona en una computadora"
+        class="inicio-img"
+      />
+    </section>
+
+    <!-- Seccion de Servicios -->
+    <section class="services" id="services">
+      <div class="service-card">
+        <img src="img/fullstack2.svg" alt="Full Stack Development" />
+        <h2>Full Stack Websites</h2>
+        <p>
+          Da vida a tu presencia en línea con un sitio web full stack completo y
+          sin fisuras. Me especializo en crear sitios web que no solo se ven
+          geniales, sino que también funcionan perfectamente.
+        </p>
+      </div>
+      <div class="service-card">
+        <img src="img/frontend2.svg" alt="Frontend Development" />
+        <h2>Frontend Development</h2>
+        <p>
+          Eleva tu presencia digital con interfaces de usuario atractivas y
+          receptivas. Desde diseños elegantes hasta interacciones fluidas, me
+          especializo en convertir ideas en experiencias visuales impactantes.
+        </p>
+      </div>
+      <div class="service-card">
+        <img src="img/backend.svg" alt="Backend Development" />
+        <h2>Backend Development</h2>
+        <p>
+          Potencia tus aplicaciones web con un backend robusto y eficiente. Me
+          especializo en crear soluciones escalables del lado del servidor para
+          garantizar una gestión de datos fluida y un rendimiento óptimo.
+        </p>
+      </div>
+      <div class="service-card">
+        <img src="img/android.svg" alt="Desarrollo de aplicaciones móviles" />
+        <h2>Desarrollo de aplicaciones móviles</h2>
+        <p>
+          Potencia tus aplicaciones móviles con un desarrollo robusto y
+          eficiente. Me especializo en crear soluciones escalables y seguras
+          para garantizar una experiencia del usuario fluida y segura. Power up
+          your web applications with a robust and efficient backend. I
+          specialize in crafting scalable server-side solutions to ensure
+          seamless data management and optimal performance.
         </p>
       </div>
     </section>
 
-    <!-- Tabla que muestra mis conocimientos tecnológicos y hobbies -->
-    <section id="skills">
-      <h2 class="skills-title">Conocimientos y Hobbies</h2>
-      <table class="skills-table">
-        <thead>
-          <tr>
-            <th>Tecnologías Conocidas</th>
-            <th>Tecnologías por Aprender</th>
-            <th>Hobbies</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>JavaScript, Kotlin, C#</td>
-            <td>React, Node.js, Docker, Typescript</td>
-            <td>Leer, Programar</td>
-          </tr>
-        </tbody>
-      </table>
+    <!-- Technical Skills Section -->
+    <section class="skills-container" id="skills">
+      <h3 class="skills-title">Habilidades</h3>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3>Lenguajes</h3>
+          <div class="icons">
+            <img src="img/icons/kotlin-svgrepo-com.svg" alt="Kotlin" />
+            <img src="img/icons/python-svgrepo-com.svg" alt="Python" />
+            <img src="img/icons/javascript-svgrepo-com.svg" alt="JavaScript" />
+            <img
+              src="img/icons/typescript-icon-svgrepo-com.svg"
+              alt="TypeScript"
+            />
+            <img src="img/icons//java-svgrepo-com.svg" alt="Java" />
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>Frontend</h3>
+          <div class="icons">
+            <img src="img/icons/tailwind-svgrepo-com.svg" alt="Tailwind" />
+            <img src="img/icons/html-5-svgrepo-com.svg" alt="HTML5" />
+            <img src="img/icons/css-3-svgrepo-com.svg" alt="CSS3" />
+            <img src="img/icons/bootstrap.svg" alt="Bootstrap" />
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>Backend</h3>
+          <div class="icons">
+            <img src="img/icons/nodejs-icon-svgrepo-com.svg" alt="Node.js" />
+            <img src="img/icons/express-svgrepo-com.svg" alt="Express" />
+
+            <img src="img/icons/nestjs-svgrepo-com.svg" alt="NestJS" />
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>Cloud</h3>
+          <div class="icons">
+            <img src="img/icons/aws-svgrepo-com.svg" alt="AWS" />
+            <img
+              src="img/icons/google-cloud-svgrepo-com.svg"
+              alt="Google Cloud"
+            />
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>Bases de datos</h3>
+          <div class="icons">
+            <img src="img/icons/mongo-svgrepo-com.svg" alt="MongoDB" />
+            <img src="img/icons/mysql-svgrepo-com.svg" alt="MySQL" />
+            <img src="img/icons/postgresql-svgrepo-com.svg" alt="PostgreSQL" />
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>Herramientas</h3>
+          <div class="icons">
+            <img src="img/icons/git-svgrepo-com.svg" alt="Git" />
+            <img src="img/icons/github-142-svgrepo-com.svg" alt="GitHub" />
+            <img src="img/icons/postman-icon-svgrepo-com.svg" alt="Postman" />
+            <img src="img/icons/docker-svgrepo-com.svg" alt="Docker" />
+            <img src="img/icons/neovim-svgrepo-com.svg" alt="NeoVim" />
+            <img src="img/icons/vscode-svgrepo-com.svg" alt="VSCode" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="content">
+        <h1>Mi nombre es <span>Tiago</span></h1>
+        <p>
+          Soy un desarrollador en formación, con conocimientos en JavaScript,
+          Kotlin, y Java. Me encanta aprender nuevas tecnologías y mejorar
+          continuamente mis habilidades de programación. Actualmente, estoy
+          explorando frameworks como React y Node.js, además de herramientas y
+          frameworks como Docker y NestJS. Siempre busco nuevos desafíos que me
+          permitan crecer tanto profesional como personalmente. Fuera del ámbito
+          tecnológico, disfruto leer y programar proyectos personales, lo que me
+          ayuda a mantenerme motivado y a expandir mi creatividad.
+        </p>
+        <div class="social-links">
+          <a href="https://github.com/tiago-appdev" target="_blank"
+            ><img src="img/icons/github-142-svgrepo-com.svg" alt="GitHub"
+          /></a>
+          <a href="https://www.linkedin.com/in/tiagoibarrola" target="_blank"
+            ><img src="img/icons/linkedin-svgrepo-com.svg" alt="LinkedIn"
+          /></a>
+          <a href="mailto:tiago.appdev@gmail.com" target="_blank"
+            ><img src="img/icons/email-svgrepo-com.svg" alt="Email"
+          /></a>
+        </div>
+      </div>
+      <div class="image">
+        <img src="img/about.svg" alt="Imagen Acerca de mi" />
+      </div>
     </section>
 
     <!-- Formulario para permitir que los visitantes me contacten -->
@@ -83,7 +228,8 @@
 
     <!-- Pie de página con derechos reservados -->
     <footer>
-      <p>&copy; 2024 Mi Portfolio - Todos los derechos reservados</p>
+      <p>&copy; 2024 Tiago Ibarrola - Todos los derechos reservados</p>
     </footer>
+    <script src="./scripts/script.js"></script>
   </body>
 </html>
