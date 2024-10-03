@@ -1,3 +1,4 @@
+/* Importa fuentes de Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Yrsa&display=swap');
 
@@ -66,7 +67,7 @@ body {
   left: 0;
   right: 0;
   margin: 0 auto;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra del navbar */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   border-radius: 25px;
   border: 2px solid var(--secondary-color);
   backdrop-filter: blur(5px);
@@ -75,7 +76,7 @@ body {
   transition: width 0.3s ease-in-out;
 }
 
-/*Estilos para el scroll*/
+/*Estilos para el hover del scroll*/
 #scrollToTop:hover {
   cursor: pointer;
   text-decoration: underline;
@@ -105,7 +106,7 @@ body {
   color: var(--foreground);
 }
 
-/* Estilos cuando el usuario hace scroll */
+/* Estilos en el navbar cuando el usuario hace scroll */
 .nav-container.scrolled {
   width: 90%;
   top: 0;
@@ -121,7 +122,7 @@ body {
   transition: width 0.3s ease-in-out;
 }
 
-/* Hamburger Menu para celulares */
+/* Menu hamburguesa para celulares */
 .hamburger-menu {
   display: none;
   flex-direction: column;
@@ -131,7 +132,7 @@ body {
   cursor: pointer;
 }
 
-/* Estilos para el span del hamburger menu */
+/* Estilos para el span del menu hamburguesa */
 .hamburger-menu span {
   background-color: var(--foreground);
   height: 0.2rem;
@@ -329,6 +330,7 @@ section.services {
   transform: translateY(0); /* Se coloca en su lugar original */
   animation: fadeInUp 0.5s ease-out forwards; /* Aplicar animación */
 }
+
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -488,7 +490,7 @@ footer {
   text-align: center;
 }
 
-/* Responsividad */
+/* Responsividad para celulares y otros dispositivos */
 @media (max-width: 768px) {
   .nav-desktop {
     display: none;
